@@ -11,10 +11,10 @@ const kafkaTopic = 'kunaxi'; // Replace with your Kafka topic
 
 // Create MQTT client
 const mqttClient = mqtt.connect(mqttBrokerUrl
-//     , {
-//     username: mqttUsername,
-//     password: mqttPassword
-// }
+    , {
+    username: mqttUsername,
+    password: mqttPassword
+}
 );
 
 mqttClient.on('connect', () => {
